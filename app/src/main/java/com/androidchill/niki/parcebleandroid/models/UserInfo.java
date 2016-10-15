@@ -129,12 +129,7 @@ public class UserInfo implements Parcelable {
             return 0;
         }
 
-        @Override
-        public void writeToParcel(Parcel dest, int flags) {
-            dest.writeString(street);
-            dest.writeString(city);
-            dest.writeInt(number);
-        }
+
 
         // Creator
         public static final Parcelable.Creator<Address> CREATOR
